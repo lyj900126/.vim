@@ -1,12 +1,12 @@
-gvim编辑器
+# gvim编辑器
 
-# 安装vim编辑器
+vim编辑器 安装
 sudo pacman -S gvim
 
-# 在家目录clone本仓库  
+在家目录clone本仓库  
 git clone https://github.com/lyj900126/.vim.git ~/.vim
 
-# 打开vim，执行PlugInstall命令安装插件
+打开vim，执行PlugInstall命令安装插件
 :PlugInstall
 
 快捷键：

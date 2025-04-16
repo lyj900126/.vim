@@ -1,6 +1,6 @@
 # gvim编辑器
 
-vim编辑器安装
+vim编辑器安装 
 sudo pacman -S gvim
 
 在家目录clone本仓库  

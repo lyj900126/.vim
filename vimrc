@@ -32,6 +32,7 @@ set mouse=a              " 开启鼠标支持
 set mousemodel=extend    " 开启侧边滚动条
 
 
+
 "------------------------------杂项---------------------------------------
 let mapleader = " "        " 定义<leader>键
 filetype plugin on         " 设置加载对应文件类型的插件
@@ -56,6 +57,8 @@ else
     hi Visual ctermfg=white ctermbg=blue guifg=white guibg=blue
 endif
 
+" 设置打开vim编辑器壁纸半透明
+hi Normal guibg=NONE ctermbg=NONE   
 
 " --------------------------代码缩进完整配置--------------------------------
 set autoindent           " 设置自动缩进

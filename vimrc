@@ -24,7 +24,7 @@ syntax enable            " 开启语法高亮功能
 syntax on                " 自动语法高亮
 set t_Co=256             " 开启256色支持
 set number               " 开启行号显示
-" set rnu                " 再显示一个相对行号
+set rnu                  " 再显示一个相对行号
 set ruler                " 总是显示光标位置
 set cursorline           " 高亮显示当前行
 filetype on              " 设置开启文件类型侦测
@@ -145,21 +145,24 @@ call plug#end()
 " ===
 " === 文件树NERDTree
 " ===
-map tt :NERDTreeToggle<CR>       “设置快捷键为 “tt“ 打开文件树
+"
+" 设置快捷键为 “tt“ 打开文件树
+map tt :NERDTreeToggle<CR> 
+
 let NERDTreeMapOpenExpl = ""
 let NERDTreeMapUpdir = ""
 let NERDTreeMapUpdirKeepOpen = "l"
 let NERDTreeMapOpenSplit = ""
 let NERDTreeOpenVSplit = ""
 let NERDTreeMapActivateNode = "i"
-let NERDTreeMapOpenInTab = "o"
+let NERDTreeMapOpenInTab = "o"      "小写o打开文件，大写O展开目录下的文件
 let NERDTreeMapPreview = ""
 let NERDTreeMapCloseDir = "n"
 let NERDTreeMapChangeRoot = "y"
-
+let NERDTreeShowHidden=1            " 设置默认显示隐藏文件
 
 " fzf启用文件预览功能
-"let g:fzf_preview_window = ['right:50%', 'ctrl-/']
+"let g:fzf_preview_window = ['right:70%', 'ctrl-/']
 
 " 启用模糊搜索
 set rtp+=~/.fzf

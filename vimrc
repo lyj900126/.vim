@@ -115,6 +115,12 @@ map <leader>c "+y
 map <leader>q :q<CR>
 map <leader>w :w<CR>
 
+"自动补全括号
+inoremap ' ''<ESC>i
+inoremap " ""<ESC>i
+inoremap ( ()<ESC>i
+inoremap [ []<ESC>i
+inoremap { {<CR>}<ESC>O
 
 
 

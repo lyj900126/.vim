@@ -24,7 +24,7 @@ syntax enable            " 开启语法高亮功能
 syntax on                " 自动语法高亮
 set t_Co=256             " 开启256色支持
 set number               " 开启行号显示
-set rnu                  " 再显示一个相对行号
+"set rnu                  " 再显示一个相对行号
 set ruler                " 总是显示光标位置
 set cursorline           " 高亮显示当前行
 filetype on              " 设置开启文件类型侦测
@@ -39,7 +39,7 @@ filetype plugin on         " 设置加载对应文件类型的插件
 " set noeb                 " 关闭错误的提示音（bi~）
 set cmdheight=1            " 设置命令行的高度
 set showcmd                " select模式下显示选中的行数
-" set laststatus=2         " 总是显示状态栏
+"set laststatus=2         " 总是显示状态栏
 set whichwrap+=<,>,h,l     " 设置光标键跨行
 " set ttimeoutlen=0        " 设置<ESC>键响应时间
 set virtualedit=block,onemore   " 允许光标出现在最后一个字符的后面
@@ -107,13 +107,13 @@ set fileencodings=utf8,ucs-bom,gbk,cp936,gb2312,gb18030  " 读取文件时，尝
 "往下分屏
 "复制到系统剪切板
 "退出vim
-"保存vim编辑
+"保存并退出vim编辑
 "
 map se :set splitright<CR>:vsplit<CR>
 map sd :set splitbelow<CR>:split<CR>
 map <leader>c "+y
 map <leader>q :q<CR>
-map <leader>w :w<CR>
+map <leader>w :wq<CR>
 
 "自动补全括号
 inoremap ' ''<ESC>i

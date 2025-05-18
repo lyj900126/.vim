@@ -132,8 +132,8 @@ Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }   " 文件树
 Plug 'mhinz/vim-startify'                                " 开屏插件
 
 " fzf#install() 确保你安装了最新的 fzf
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
+"Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+"Plug 'junegunn/fzf.vim'
 
 call plug#end()
 

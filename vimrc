@@ -96,6 +96,8 @@ set autoread            " 文件在vim之外修改过，自动重新读入
 set autowrite           " 设置自动保存
 set confirm             " 在处理未保存或只读文件的时候，弹出确认
 
+" 打开文件时恢复到上一次退出时的位置
+autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 
 " ----------------------编码-----------------------------
 set termencoding=utf-8            " 终端编码

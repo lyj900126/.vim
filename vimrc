@@ -105,14 +105,11 @@ set fileencodings=utf8,ucs-bom,gbk,cp936,gb2312,gb18030  " 读取文件时，尝
 
 
 " ----------------------快捷键-----------------------------
-"往右分屏
-"往下分屏
-"复制到系统剪切板
-"退出vim
-"保存并退出vim编辑
-"
+"se往右分屏;sd往下分屏
 map se :set splitright<CR>:vsplit<CR>
 map sd :set splitbelow<CR>:split<CR>
+
+"复制到系统剪切板; 不保存退出vim; 保存并退出vim编辑
 map <leader>c "+y
 map <leader>q :q<CR>
 map <leader>w :wq<CR>
@@ -147,20 +144,20 @@ call plug#end()
 " ===
 " === 文件树NERDTree
 " ===
-"
+" "(空字符串)表示禁用该功能的默认快捷键
 " 设置快捷键为 “tt“ 打开文件树
 map tt :NERDTreeToggle<CR> 
 
-let NERDTreeMapOpenExpl = ""
-let NERDTreeMapUpdir = ""
-let NERDTreeMapUpdirKeepOpen = "l"
-let NERDTreeMapOpenSplit = ""
-let NERDTreeOpenVSplit = ""
-let NERDTreeMapActivateNode = "i"
-let NERDTreeMapOpenInTab = "o"      "小写o打开文件，大写O展开目录下的文件
-let NERDTreeMapPreview = ""
-let NERDTreeMapCloseDir = "n"
-let NERDTreeMapChangeRoot = "y"
+let NERDTreeMapOpenExpl = ""        "禁用--调用命令在外部文件管理器打开光标所在目录
+let NERDTreeMapUpdir = ""           "禁用--返回上级目录，默认会折叠当前目录
+let NERDTreeMapUpdirKeepOpen = "l"  "返回上级目录时保持当前目录展开状态
+let NERDTreeMapOpenSplit = ""       "禁用--在水平窗口中打开文件(默认是g)
+let NERDTreeOpenVSplit = ""         "禁用--在垂直窗口中打开文件(默认是s)
+let NERDTreeMapActivateNode = "i"   "激活光标所在节点，打开文件或者展开(收起)目录
+let NERDTreeMapOpenInTab = "o"      "小写o在新标签打开文件，大写O展开目录下的文件
+let NERDTreeMapPreview = "p"        "预览文件内容(光标仍停留在目录窗口)
+let NERDTreeMapCloseDir = "n"       "关闭当前目录并返回上一级
+let NERDTreeMapChangeRoot = "y"     "切换当前目录为根目录(原默认键是大写C)
 let NERDTreeShowHidden=1            " 设置默认显示隐藏文件
 
 " fzf启用文件预览功能

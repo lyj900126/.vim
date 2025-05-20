@@ -25,6 +25,6 @@ git clone ssh://git@lxyun.top:5030/git/gvim.git ~/.vim
 "se" 往右分屏
 "sd" 往下分屏
 "空格+c" 复制到系统剪切板
-"空格+q" 退出vim
-"空格+w" 保存vim编辑
+"空格+q" 不保存退出vim
+"空格+w" 保存并退出vim编辑
 ```
